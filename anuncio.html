@@ -6,17 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body { margin: 0;}
-
-
+    .cajaanuncio {display: flex; align-items: center;}
+    .logo {height:90px}
+    h1{ text-align:center; font-size: 30px}
+    .botonanuncio { display:block; padding: 10px; background-color: orangered; color: #FFF; text-decoration: none; text-align: center; border-radius:20px; margin: 10px }
 @media(max-width:480px){
-
+    .cajaanuncio { flex-flow:wrap; height: 100vh;align-items: center;
+    align-content: stretch;
+    justify-content: center;
+}
+.logo {height:auto; width:90%; }
+    h1{width:90%; }
 }
 </style>
 </head>
 
 <body class="cajaanuncio">
     
-    <a href="index.html#seccion" target="_blank"><img src="images/logo.png" ></a>
+    <a href="index.html#seccion" target="_blank"><img src="images/logo.png" class="logo" ></a>
     
     <h1>Texto de venta o promoción de mi anuncio</h1>
     
