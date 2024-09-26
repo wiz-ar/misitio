@@ -1,0 +1,130 @@
+/* Regla para poner el relleno (padding) y Margen en cero */
+* { margin: 0; padding: 0;}
+html{ scroll-behavior: smooth}
+body { color: #09144A; font-family: 'Lato', sans-serif; }
+
+header { background-color: #f1f2f2; text-align: center;}
+.logo { width:200px}
+
+section {padding: 10px}
+
+nav { text-align: center; border-top: 1px solid #0069a6; }
+nav a, nav span { color: #0069a6; text-decoration: none; font-weight: bold; padding: 20px; display: inline-block; }
+nav a:hover, nav span:hover { color: #f1f2f2; background-color: #0069a6; transition: all 1s}
+nav a.seleccionado{ color: #f1f2f2; background-color: #0069a6; }
+
+nav span { position: relative}
+nav span div {display:none; position: absolute; left: 0; width: 140px; top: 60px}
+nav span:hover div {display:block}
+
+
+h1 { margin:20px 0; font-size: 2.5em; color: orangered}
+a { color:#00837b;}
+p { margin: 10px 0;}
+
+img {max-width:100%}
+
+.cajacontenedora, .cajacontenedora4 { display: flex; flex-flow: wrap;}
+.cajacontenedora div { width: 31.1%; margin: 1%; padding: 0; border: 1px solid orange; box-sizing: border-box}
+.cajacontenedora img, .cajacontenedora4 img { width: 100%; }
+.cajacontenedora h2 { color: darkgreen; padding: 10px; font-size: 28px;}
+.cajacontenedora p { color: dimgray; margin: 10px}
+.cajacontenedora h2 a { background-color: darkgreen; color: #FFF; padding: 10px; text-decoration: none; border-radius: 10px;}
+.cajacontenedora a { background-color: darkgreen; color: #FFF; padding: 10px; text-decoration: none; border-radius: 10px; display: inline-block; margin: 10px;}
+/* CSS Quienes Somos */
+.cajacontenedora4 div { width: 48%; margin: 1%; padding: 0; border: 1px solid orange;  box-sizing: border-box; border-radius: 10px; overflow: hidden;}
+.cajacontenedora4 div h2, .cajacontenedora4 div p { padding:10px 10px 0;}
+.cajacontenedora4 div img { width: 40%; float: left; margin: 0 10px 0 0; }
+.cajacontenedora4 div a { display:inline-block; padding: 10px; margin: 0 10px; border-radius:6px; text-decoration: none; background-color: crimson; color:#fff; float: right;}
+
+.cajaslider img { margin:auto }
+
+.cajacontenedora4 div:nth-child(even)  {}
+.cajacontenedora4 div:nth-child(even) img { float:right; margin: 0 0 0 10px;}
+.cajacontenedora4 div:nth-child(even) a { float: left}
+
+.masinfo a {  display:inline-block; padding: 10px;  border-radius:6px; text-decoration: none; background-color: crimson; color:#fff;}
+
+.masinfo p { height:0; overflow: hidden}
+.masinfo:hover p { height:100px; transition: all 1s}
+
+.cajacontenedora .tituloverde { color:darkgreen}
+.cajacontenedora .fondoverde { background-color: darkgreen}
+
+.cajagaleria { text-align: center }
+.cajagaleria a { }
+.cajagaleria img { width: 200px; margin: 20px }
+
+footer {  background-image: url("images/diagonal.gif");  text-align: center; color: #000; padding: 10px;}
+.icono { display:none; position: absolute; right: 10px; top: 10px;}
+
+form { max-width: 600px; margin: auto; border: 1px solid orange; padding: 20px; border-radius: 10px; }
+form strong { display: inline-block; width: 100px; }
+input {border: 1px solid orange; width: 60%; padding: 6px}
+select {border: 1px solid orange; width: 60%; padding: 6px}
+textarea {border: 1px solid orange; width: 60%; padding: 6px; height: 60px}
+input[type=checkbox], input[type=radio] { width:20px}
+.botonenvio { background-color: orangered; color:#fff;}
+.botonenvio:hover { background-color: #fff; color:orangered;}
+
+.marcomapa { width: 100%; max-width: 600px; height: 400px; display: block; margin: auto}
+.marcovideo { width: 100%; max-width: 560px; height: 315px; display: block; margin: auto}
+
+.cajapublicidad { background-color: darkgray; text-align: center; padding: 10px}
+.contenedoranuncio { display:block; margin: auto; width: 728px; height: 90px; background-color: #fff}
+/* estilos anuncio */
+.cajaanuncio { display:flex; flex-flow: wrap; align-items: center;background-color: #f1f2f2;}
+.cajaanuncio img { height: 90px}
+.cajaanuncio h1 { width: 66%;
+    font-size: 30px;
+    margin: 10px;}
+.botonanuncio { display:inline-block; padding: 10px; border-radius: 10px; margin: 10px; background-color: orangered; color: #fff; text-decoration: none; }
+
+.fondoimagen1, .fondoimagen2, .fondoimagen3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    min-height: 100vh;
+}
+.fondoimagen1 { background-image: url('images/sitio.jpg'); }
+.fondoimagen2 { background-image: url('images/wireframe.jpg'); }
+.fondoimagen3 { background-image: url('images/galeria/El_Capricho.jpg'); }
+
+.cajatitulo { position:absolute; top: 50%; left: 0; width: 100%}
+.cajatitulo h2 { text-align: center; margin: auto; width: 70%; padding: 20px; box-sizing: border-box; font-size: 60px; background-color: #f1f2f2; color:#fff;}
+.cajatitulo h3 { text-align: center; margin: auto; width: 70%; padding: 20px; box-sizing: border-box; font-size: 60px; background-color:#464344; color:#fff;}
+.cajaconfondo { padding:60px}
+.cajaconfondo h3 { text-align: center; border-bottom: 1px solid #999; padding: 6px}
+
+
+@media (max-width:800px) {
+    .cajacontenedora4 div, .cajacontenedora div { width: 48%;}
+    .contenedoranuncio { width: 300px; height: 250px;}
+
+}
+@media (max-width:480px) {
+    section {padding:10px;}
+    .cajacontenedora4 div, .cajacontenedora div { width: 98%; }
+    .cajatexto h3 {top: 10%; font-size: 20px;   padding: 10px; width: 240px; margin-left: -110px;}
+    .icono { display: block}
+    nav { display: none}
+    .responsive { display:block}
+    nav a { display: block; border-bottom:1px solid}
+    
+    form strong { display:none}
+    input, select, textarea { width:90%}
+    
+    /* estilos anuncio */
+.cajaanuncio { display:block; text-align: center}
+.cajaanuncio img { height: 90px}
+.cajaanuncio h1 { width: 100%; font-size: 26px; margin: 10px 0;}
+.botonanuncio { display:inline-block; padding: 10px; border-radius: 10px; margin: 10px; background-color: orangered; color: #fff; text-decoration: none}
+
+    .cajacontenedora4 div:nth-child(even) img { float: none; width: 100%;}
+    .cajacontenedora4 div a { float: none !important;}
+   
+}
+

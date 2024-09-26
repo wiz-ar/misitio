@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Antoni Gaud&iacute;</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css"></head>
+
+<body>
+<header>
+	<a href="index.html"><img src="images/logo.png" alt="Gaudí" class="logo" /></a>
+	<a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	<nav class=" " id="navegador">
+        <a href="quienes_somos.html">Quienes Somos</a>
+        <a href="que_hacemos.html">Qué hacemos</a>    
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="quienes_somos.html#seccion1">Seccion</a>
+    </nav>
+</header>
+
+<section>  
+   
+    <h1>Contacto - Formulario</h1>
+    <p>Por favor complete el siguiente formulario:</p>
+    
+    <form method="post" action="respuesta.html">
+        <p><strong>Nombre:</strong>
+            <input type="text" name="nombre" required placeholder="Nombre y Apellido" ></p>
+        
+        <p><strong>Email:</strong> 
+            <input type="email" name="email" required placeholder="email"></p>
+        
+        <p><strong>Contraseña:</strong>
+            <input type="password" name="clave" placeholder="clave"></p>
+        
+        <p>Experiencia:<br>
+            <input type="checkbox" name="experiencia" value="Dis">Diseño<br>
+            <input type="checkbox" name="experiencia" value="Com">Comunicación<br>
+            <input type="checkbox" name="experiencia" value="Des">Desarrollo<br>
+            <input type="checkbox" name="experiencia" value="Neg">Negocios<br>
+        </p>
+        
+        <p>Estudia actualmente: <input type="radio" name="estudio" value="si"> SI | NO  <input type="radio" name="estudio" value="no"> </p>
+        
+        <p><strong>País:</strong>
+            <select name="pais">
+                <option>seleccione país</option>
+                <option value="ARG">Argentina</option>
+                <option value="BRA">Brasil</option>
+                <option value="COL">Colombia</option>
+                <option value="ECU">Ecuador</option>
+            </select>
+        </p>
+        
+        <p><strong>Mensaje / consulta:<br></strong> 
+            <textarea name="consulta" placeholder="Mensaje / consulta"></textarea>
+        </p>
+        <p> <input type="submit" name="btnenvio" value="Enviar formulario" class="botonenvio"></p>
+    </form>
+    
+    <p>&nbsp;</p>
+</section>
+
+<footer>       
+  <p>Datos del pie de p&aacute;gina &copy; 2022</p>
+</footer>
+
+</body>
+</html>

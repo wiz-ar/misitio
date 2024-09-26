@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos | Wenceslao</title>   
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="nombresitio"> <img src="logo.jpg" class="logomarca"> </a>
+        <nav>
+            <a href="quienes_somos.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>Productos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="#">Ver más</a></p>
+        
+        <div class="cajaslider">
+            <img src="sound.jpg" class="misimagenes">
+            <img src="workbench.jpg" class="misimagenes">
+            <img src="banner los_increibles.jpg" class="misimagenes">
+        </div>
+        
+        <div class="cajacontenedora" id="contacto">
+            
+          <div class="cajaverde">
+                <img src="foto_noticia.jpg">
+                <h2>caja 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div>
+                <img src="foto_noticia.jpg">
+                <h2>caja 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div>
+                <img src="foto_noticia.jpg">
+                <h2>caja 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div>
+                <img src="foto_noticia.jpg">
+                <h2>caja 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer>
+        <p>Wenceslao Zavala</p>
+    </footer>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+
+        // acá define qué elemento entra en el slider
+        var x = document.getElementsByClassName("misimagenes");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+
+    carousel();
+
+    function carousel() {
+
+    var i;
+
+    var x = document.getElementsByClassName("misimagenes");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+
+    }
+</script>
+</body>
+</html>
