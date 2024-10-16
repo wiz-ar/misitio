@@ -100,7 +100,45 @@
 </div>
     <a href="#" class="botonsubir">arriba</a>
 </section>
-
+    <div class="slider">
+       <div class="slides">
+        <img src="images/banner los_increibles.jpg" class="slide">
+        <img src="images/CASABATLLO.jpg" class="slide">
+        <img src="images/coffee.jpg" class="slide">
+    </div>
+       <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+       <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+<script>
+let slideIndex = 0;
+  
+function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    
+    if (index >= totalSlides) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = totalSlides - 1;
+    } else {
+        slideIndex = index;
+    }    
+    slides.style.transform = `translateX(${-slideIndex * 50}%)`;
+}
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+ 
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}  
+function moveSlide(step) {
+    showSlide(slideIndex + step);
+}
+  
+// Initialize slider
+showSlide(slideIndex);
+</script>
 <footer>       
   <p>Datos del pie de p&aacute;gina &copy; 2022</p>
 </footer>
