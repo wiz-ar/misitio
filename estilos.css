@@ -20,7 +20,7 @@ nav span:hover div {display:block}
 
 h1 { margin:20px 0; font-size: 2.5em; color: orangered}
 a { color:#00837b;}
-p { margin: 10px auto; }
+p { margin: 10px auto; max-width: 1000px; }
 
 img {max-width:100%}
 
