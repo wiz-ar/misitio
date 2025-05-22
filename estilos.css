@@ -11,17 +11,17 @@
 }
 *{ margin:0; padding: 0}
 body {font-family: "Roboto", sans-serif;}
-header {background-color: #c91515; color: #FFF; padding: 10px;  text-align: center; display: flex; justify-content: space-between; align-items: center;    position: fixed; width: 100%; z-index: 100;}
+header {background-color: #000; color: #FFF; padding: 10px;  text-align: center; display: flex; justify-content: space-between; align-items: center;     width: 100%; z-index: 100;}
 
 nav { text-align:center}
 nav ul {display:flex; list-style: none;}
 nav ul a { color:#fff; text-decoration: none; display: inline-block; padding: 10px}
-main {background-color: yellow; color: #d91f1f; padding: 10px;}
+main {color: #d91f1f; padding: 10px;}
 footer {background-color: #FFF; color: #000; padding: 10px;font-size: 20px; text-align: center}
 .logo { width: 200px}
 .banner {width:100%}
 .cajacontenedora {display: flex;flex-flow: wrap; }
-.caja { width: 33.3%; background-color: #fff; border:1px solid #000; box-sizing: border-box; position: relative}
+.caja { width: 31.3%; margin: 1%; border:1px solid #000; box-sizing: border-box; position: relative; padding: 20px}
 .caja h2 { position: absolute; top:10%; left:0; width: 100%; text-align: center; display: none }
 .caja p { position: absolute; top:50%; left:0; width: 100%; display: none}
 .caja:hover img { opacity: 0.5; transition: all 1s }
@@ -104,15 +104,22 @@ footer {background-color: #FFF; color: #000; padding: 10px;font-size: 20px; text
             font-size: 20px;
             cursor: pointer;
         }
-@media(min-width:1024px){
-    .menuchico .logo { width: 100px; }
-    .menuchico { padding: 0 10px;}
-}
+
+.marcoanuncio { display:block; margin: auto; width:728px; height: 90px}
+form {width: 60%; margin: auto}
+form p { margin: 10px 0}
+input, select { width:60%; padding: 10px; box-sizing: border-box; border: 1px solid #000;}
+label { float:left; width: 30%}
 /* tabletas */
 @media(max-width:1024px){
+    .menuchico .logo { width: 100px; }
+    .menuchico { padding: 0 10px;}
     .caja { width: 50%;} /* cambia a dos columnas */
     header {display:block;}
     nav ul {justify-content: center}
+}
+@media(max-width:727px){
+        .marcoanuncio {width:300px; height: 600px}
 }
 /* celulares */
 @media(max-width:480px){
@@ -122,6 +129,9 @@ footer {background-color: #FFF; color: #000; padding: 10px;font-size: 20px; text
     nav { position: absolute; left: -100%; width: 100%; background-color: #000; transition: all ease 1s; }
     .icono { display: block; position: absolute; top: 10px; right: 10px;}
     .mostrarmenu { left: 0;}
+    label{ display:none}
+    input, select { width:90%;
+
 }
 
 

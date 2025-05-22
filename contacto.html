@@ -29,42 +29,31 @@
     </header>
     <main>
      
-        <picture>
-            <source media="(max-width:480px)" srcset="pixel.jpg">
-             <img src="images/banner.jpg" class="banner">
-        </picture>
+        <h1>Contacto</h1>
+      <form action="#" method="post">
+        <p><label>Nombre y Apellido:</label>
+            <input type="text" name="nombre" required placeholder="Nombre y Apellido"></p>
+          <p><label>Email: </label>
+              <input type="email" name="email" required placeholder="Email"></p>
+          <p><label>País:</label>
+              <select name="pais">
+                  <option>Argentina</option>
+                  <option>Brasil</option>
+                  <option>Chile</option>
+                  <option>Ecuador</option>
+              </select></p>
+          <p><input type="submit" value="Enviar formulario"></p>
+      </form>
+  <script>
+    document.getElementById('miFormulario').addEventListener('submit', function(event) {
+      alert('El formulario ha sido enviado.');
+    });
+  </script>
         
-        <div class="cajacontenedora">
-            <div class="caja">
-                <a href="productos.html"><img src="images/blanca.jpg" class="imgcaja"></a>
-                <h2>Título</h2>
-            </div>
-            <div class="caja">
-                <img src="images/azul.jpg" class="imgcaja">
-                <h2>Título</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="caja">
-                <img src="images/verde.jpg" class="imgcaja">
-                <h2>Título</h2>
-            </div>
-            
-            
-
-            
-            
-            <div class="caja2">
-               
-                <img src="images/banner.jpg" class="imgcaja">
-            </div>
-            <div class="caja2">
-                <img src="images/verde.jpg" class="imgcaja">
-            </div>
-        </div>
     </main>
     
    
-    <iframe class="marcoanuncio" src="anuncio.html" scrolling="no" frameborder="0"></iframe>
+
     
     <footer>
         <p>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi anuncio</title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{ margin:0; padding: 0}
+    body {font-family: "Roboto", sans-serif; background-color: #000; color:#FFF}
+    img {max-height: 90px}
+    .contenedor{ display: flex; align-items: center; justify-content: space-around; flex-flow: wrap;}
+    .boton {background-color: orangered; color:#FFF; padding:10px; border-radius:10px; display: block; text-decoration: none; font-weight: bold}
+    
+    @media(max-width:719px){
+        img {max-height:none; width: 260px}
+        .contenedor { height: 100vh; align-content: space-around; }
+        h1 { width:100%; text-align: center}
+</style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="images/adidas.jpg">
+        <h1>texto de venta</h1>
+        <a href="https://wiz-ar.github.io/misitio/" target="_blank" class="boton" >comprar</a>
+    </div>
+</body>
+</html>
