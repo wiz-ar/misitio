@@ -20,7 +20,7 @@ main {color: #d91f1f; padding: 10px;}
 footer {background-color: #FFF; color: #000; padding: 10px;font-size: 20px; text-align: center}
 .logo { width: 200px}
 .banner {width:100%}
-.cajacontenedora {display: flex;flex-flow: wrap; }
+.cajacontenedora {display: flex;flex-flow: wrap; max-width: 1740px; }
 .caja { width: 31.3%; margin: 1%; border:1px solid #000; box-sizing: border-box; position: relative; padding: 20px}
 .caja h2 { position: absolute; top:10%; left:0; width: 100%; text-align: center; display: none }
 .caja p { position: absolute; top:50%; left:0; width: 100%; display: none}
